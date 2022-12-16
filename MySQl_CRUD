@@ -1,0 +1,36 @@
+import java.sql.*;
+//import 
+class Mysql_Crud
+{
+    public static void main(String args[]){
+        Connection con=null;
+        ResultSet result=null;
+        /*try{
+            Class.forName("sun.jbdc.odbc.JdbcDdocDriver");
+        }
+        catch(ClassNotFoundException e)
+        {
+            System.out.println("");
+        }*/
+        String dbURL="jdbc:mysql://localhost:3307/best";
+        String username="root";
+        String password="";
+        Statement stmt=null;
+        String query="SELECT *FROM users";
+        try
+        {
+            con=DriverManager.getConnection(dbURL, username,password);
+            stmt =con.prepareStatement(query);
+            result=stmt.executeQuery(query);
+            System.out.println("Name\t\tPassword");
+            while(result.next()){
+                System.out.println(result.getString(1)+"\t\t"+result.getString(2)+"\n");
+            }
+        }
+        catch (SQLException sqle)
+        {
+            sqle.printStackTrace();
+        }
+        
+    }
+}
