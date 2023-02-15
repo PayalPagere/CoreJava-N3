@@ -1,4 +1,4 @@
-package org.tnsif.ExceptinHandling;
+package org.tnsif.ExceptionHandling;
 //Progarm to demonstrate on TRY catch finally block
 public class FinalllyDemo {
 

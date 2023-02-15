@@ -1,4 +1,4 @@
-package org.tnsif.ExceptinHandling;
+package org.tnsif.ExceptionHandling;
 
 import java.io.IOException;
 
