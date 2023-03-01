@@ -8,14 +8,16 @@ public class MMBankFactory extends BankFactory{
 
 	@Override
 	public SavingAcc getNewSavingAcc(int AccNo, String accNm, float accBal, boolean isSalaried) {
-		MMSavingAcc s=new MMSavingAcc(AccNo,accNm,accBal,isSalaried);
-		return s;
+		MMSavingAcc s1=new MMSavingAcc(AccNo,accNm,accBal,isSalaried);
+		return s1;
 	}
+
 
 	@Override
 	public CurrentAcc getNewCurrentAcc(int AccNo, String accNm, float accBal, float creditLimit) {
-		MMCurrentAcc c=new MMCurrentAcc(AccNo,accNm,accBal,creditLimit);
-		return c;
+		
+		MMCurrentAcc c1=new MMCurrentAcc(AccNo,accNm,accBal,creditLimit);
+		return c1;
 	}
 
 }

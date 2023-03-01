@@ -3,19 +3,20 @@ package org.tnsif.application;
 import org.tnsif.framework.SavingAcc;
 
 public class MMSavingAcc extends SavingAcc{
-	private static final float MINBAL=0.0f;
-	
+	// constructor
 	public MMSavingAcc(int accNo, String accNm, float accBal, boolean isSalaried) {
 		super(accNo, accNm, accBal);
-		
-		
+		// TODO Auto-generated constructor stub
 	}
 
+	
+		
+	
 	@Override
 	public String toString() {
 		return "MMSavingAcc [toString()=" + super.toString() + "]";
 	}
 	
 	
-	
+
 }
